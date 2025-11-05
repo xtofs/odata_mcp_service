@@ -1,0 +1,4 @@
+
+
+GET https://jetsons.azurewebsites.net/$metadata
+Accept: application/xml

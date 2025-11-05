@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug OData MCP Service",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/ODataMcpService/bin/Debug/net10.0/ODataMcpService.dll",
+            "args": ["http://jetsons.azurewebsites.net"],
+            "cwd": "${workspaceFolder}/ODataMcpService",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Debug OData MCP Service (All Tools)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/ODataMcpService/bin/Debug/net10.0/ODataMcpService.dll",
+            "args": ["http://jetsons.azurewebsites.net", "+f"],
+            "cwd": "${workspaceFolder}/ODataMcpService",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Debug OData MCP Service (External Console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/ODataMcpService/bin/Debug/net10.0/ODataMcpService.dll",
+            "args": ["http://jetsons.azurewebsites.net", "+f"],
+            "cwd": "${workspaceFolder}/ODataMcpService",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}
